@@ -15,18 +15,10 @@
 
 .int-space {
   position: relative;
-}
 
-.int-space:not(:last-child) {
-  margin-right: 50px;
-}
-.logo-header {
-  color: var(--title-color);
-  text-decoration: none;
-  margin-right: 93px;
-}
-.logo-header > span {
-  color: var(--accent-color);
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav {
@@ -40,6 +32,11 @@
   padding-top: 5px;
   padding-bottom: 5px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .current::after {
@@ -51,14 +48,10 @@
   background-color: var(--accent-color);
   border-radius: 2px;
   bottom: -29px;
-}
 
-.site-nav:hover,
-.site-nav:focus {
-  color: var(--accent-color);
-}
-.current {
-  color: var(--accent-color);
+  & {
+    color: var(--accent-color);
+  }
 }
 
 .contact-links {
@@ -73,19 +66,19 @@
   text-decoration: none;
   margin-left: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contacts-icon {
   fill: var(--text-color);
   margin-right: 10px;
-}
 
-.contact-links:hover,
-.contact-links:focus {
-  color: var(--accent-color);
-}
-
-.contact-links:hover .contacts-icon,
-.contact-links:focus .contacts-icon {
-  fill: var(--accent-color);
+  .contact-links:hover &,
+  .contact-links:focus & {
+    fill: var(--accent-color);
+  }
 }

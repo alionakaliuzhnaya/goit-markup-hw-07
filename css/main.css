@@ -78,17 +78,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-header {
+.logo__header {
   color: var(--title-color);
   text-decoration: none;
   margin-right: 93px;
 }
 
-.logo-header > span {
+.logo__header > span {
   color: var(--accent-color);
 }
 
-.logo-footer {
+.logo__footer {
   display: inline-block;
   margin-bottom: 20px;
   font-family: var(--secondary-font);
@@ -100,7 +100,7 @@ body {
   text-decoration: none;
 }
 
-.logo-footer > span {
+.logo__footer > span {
   color: var(--accent-color);
 }
 
@@ -370,20 +370,20 @@ body {
   padding-top: 72px;
 }
 
-.footer-form-head {
+.footer-form__head {
   display: block;
   color: var(--basic-color);
 }
 
-.footer-modal-form {
+.footer-form__modal-form {
   display: flex;
 }
 
-.footer-email-label {
+.footer-form__email-label {
   margin-right: 12px;
 }
 
-.footer-modal-input {
+.footer-form__modal-input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -395,11 +395,11 @@ body {
   outline: none;
 }
 
-.footer-modal-input:focus {
+.footer-form__modal-input:focus {
   border-color: var(--accent-color);
 }
 
-.footer-form-btn {
+.footer-form__btn {
   display: flex;
   align-items: center;
   width: 200px;
@@ -429,15 +429,15 @@ body {
   align-items: center;
 }
 
-.int-space {
+.menu__item {
   position: relative;
 }
 
-.int-space:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav {
+.menu__link {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
@@ -450,7 +450,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav:hover, .site-nav:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -469,7 +469,7 @@ body {
   color: var(--accent-color);
 }
 
-.contact-links {
+.menu__contact-links {
   display: flex;
   align-items: center;
   font-family: var(--main-font);
@@ -483,7 +483,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-links:hover, .contact-links:focus {
+.menu__contact-links:hover, .menu__contact-links:focus {
   color: var(--accent-color);
 }
 
@@ -492,8 +492,8 @@ body {
   margin-right: 10px;
 }
 
-.contact-links:hover .contacts-icon,
-.contact-links:focus .contacts-icon {
+.menu__contact-links:hover .contacts-icon,
+.menu__contact-links:focus .contacts-icon {
   fill: var(--accent-color);
 }
 
@@ -509,7 +509,7 @@ body {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herobg.jpg");
 }
 
-.hero-section {
+.hero__section {
   margin-left: auto;
   margin-right: auto;
   width: 696px;
@@ -518,7 +518,7 @@ body {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   color: var(--basic-color);
   font-weight: 900;
   font-size: 44px;
@@ -537,17 +537,17 @@ body {
   margin-top: -30px;
 }
 
-.sub-img-item {
+.sub-img__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.sub-wrapper {
+.sub-img__wrapper {
   position: relative;
 }
 
-.sub-activity-title {
+.sub-img__title {
   position: absolute;
   content: '';
   width: 370px;
@@ -616,14 +616,14 @@ body {
   background-color: var(--bc-color-light);
 }
 
-.team-list {
+.team- {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.team-list-item {
+.team__item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
@@ -638,7 +638,7 @@ body {
   padding-right: 32px;
 }
 
-.names {
+.staff__names {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -649,7 +649,7 @@ body {
   margin-bottom: 10px;
 }
 
-.position {
+.staff__position {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
@@ -704,7 +704,7 @@ body {
   background-color: var(--bg-color-dark);
 }
 
-.footer-list {
+.contact {
   list-style: none;
 }
 
@@ -728,7 +728,7 @@ body {
   text-decoration: none;
 }
 
-.contact-footer {
+.contact__footer {
   display: block;
   margin-top: 9px;
   font-weight: normal;
@@ -740,7 +740,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-footer:hover, .contact-footer:focus {
+.contact__footer:hover, .contact__footer:focus {
   color: var(--accent-color);
 }
 
@@ -772,22 +772,22 @@ body {
   color: var(--accent-color);
 }
 
-.filter-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-items {
+.filter__items {
   margin-right: 8px;
   margin-left: 0px;
 }
 
-.filter-items:last-child {
+.filter__items:last-child {
   margin-right: 0px;
 }
 
-.filter-buttoms {
+.filter__buttoms {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -806,12 +806,12 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-buttoms:hover, .filter-buttoms:focus, .filter-buttoms:active {
+.filter__buttoms:hover, .filter__buttoms:focus, .filter__buttoms:active {
   background-color: var(--accent-color);
   color: var(--basic-color);
 }
 
-.filter-current {
+.filter__current {
   background-color: var(--accent-color);
   color: var(--basic-color);
 }
@@ -823,18 +823,18 @@ body {
   margin-top: -30px;
 }
 
-.portfolio-item {
+.portfolio__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.portfolio-item:hover {
+.portfolio__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-links:hover .overlay,
-.portfolio-links:focus .overlay {
+.portfolio__links:hover .portfolio__overlay,
+.portfolio__links:focus .portfolio__overlay {
   transform: translateY(0%);
 }
 
@@ -843,7 +843,7 @@ body {
   overflow: hidden;
 }
 
-.overlay {
+.portfolio__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -874,7 +874,7 @@ body {
   border-right: 1px solid #eeeeee;
 }
 
-.portfolio-title {
+.project__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -884,7 +884,7 @@ body {
   margin-bottom: 4px;
 }
 
-.portfolio-type {
+.project__type {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

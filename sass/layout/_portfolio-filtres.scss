@@ -1,13 +1,13 @@
 .portfolio-current {
   color: var(--accent-color);
 }
-.filter-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-items {
+.filter__items {
   margin-right: 8px;
   margin-left: 0px;
 
@@ -16,7 +16,7 @@
   }
 }
 
-.filter-buttoms {
+.filter__buttoms {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -44,7 +44,7 @@
   }
 }
 
-.filter-current {
+.filter__current {
   background-color: var(--accent-color);
   color: var(--basic-color);
 }

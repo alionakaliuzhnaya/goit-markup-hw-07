@@ -5,7 +5,7 @@
   margin-top: -30px;
 }
 
-.portfolio-item {
+.portfolio__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
@@ -15,8 +15,8 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-.portfolio-links:hover .overlay,
-.portfolio-links:focus .overlay {
+.portfolio__links:hover .portfolio__overlay,
+.portfolio__links:focus .portfolio__overlay {
   transform: translateY(0%);
 }
 
@@ -25,7 +25,7 @@
   overflow: hidden;
 }
 
-.overlay {
+.portfolio__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -56,7 +56,7 @@
   border-right: 1px solid #eeeeee;
 }
 
-.portfolio-title {
+.project__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -66,7 +66,7 @@
   margin-bottom: 4px;
 }
 
-.portfolio-type {
+.project__type {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

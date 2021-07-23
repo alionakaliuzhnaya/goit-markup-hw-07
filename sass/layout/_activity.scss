@@ -5,17 +5,17 @@
   margin-top: -30px;
 }
 
-.sub-img-item {
+.sub-img__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.sub-wrapper {
+.sub-img__wrapper {
   position: relative;
 }
 
-.sub-activity-title {
+.sub-img__title {
   position: absolute;
   content: '';
   width: 370px;

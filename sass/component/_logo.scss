@@ -6,16 +6,16 @@
   letter-spacing: 0.03em;
 }
 
-.logo-header {
+.logo__header {
   color: var(--title-color);
   text-decoration: none;
   margin-right: 93px;
 }
-.logo-header > span {
+.logo__header > span {
   color: var(--accent-color);
 }
 
-.logo-footer {
+.logo__footer {
   display: inline-block;
   margin-bottom: 20px;
   font-family: var(--secondary-font);
@@ -26,6 +26,6 @@
   color: var(--basic-color);
   text-decoration: none;
 }
-.logo-footer > span {
+.logo__footer > span {
   color: var(--accent-color);
 }

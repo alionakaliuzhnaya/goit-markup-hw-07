@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.int-space {
+.menu__item {
   position: relative;
 
   &:not(:last-child) {
@@ -21,7 +21,7 @@
   }
 }
 
-.site-nav {
+.menu__link {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
@@ -54,7 +54,7 @@
   }
 }
 
-.contact-links {
+.menu__contact-links {
   display: flex;
   align-items: center;
   font-family: var(--main-font);
@@ -77,8 +77,8 @@
   fill: var(--text-color);
   margin-right: 10px;
 
-  .contact-links:hover &,
-  .contact-links:focus & {
+  .menu__contact-links:hover &,
+  .menu__contact-links:focus & {
     fill: var(--accent-color);
   }
 }
